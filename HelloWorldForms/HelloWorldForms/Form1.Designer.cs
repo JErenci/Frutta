@@ -28,30 +28,20 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
+			this.EnglishButton = new System.Windows.Forms.Button();
 			this.Display = new System.Windows.Forms.TextBox();
+			this.GermanButton = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
-			// button1
+			// EnglishButton
 			// 
-			this.button1.Location = new System.Drawing.Point(32, 24);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(215, 57);
-			this.button1.TabIndex = 0;
-			this.button1.Text = "English";
-			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new System.EventHandler(this.button1_Click);
-			// 
-			// button2
-			// 
-			this.button2.Location = new System.Drawing.Point(32, 87);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(215, 57);
-			this.button2.TabIndex = 0;
-			this.button2.Text = "German";
-			this.button2.UseVisualStyleBackColor = true;
-			this.button2.Click += new System.EventHandler(this.button1_Click);
+			this.EnglishButton.Location = new System.Drawing.Point(32, 24);
+			this.EnglishButton.Name = "EnglishButton";
+			this.EnglishButton.Size = new System.Drawing.Size(215, 57);
+			this.EnglishButton.TabIndex = 0;
+			this.EnglishButton.Text = "English";
+			this.EnglishButton.UseVisualStyleBackColor = true;
+			this.EnglishButton.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// Display
 			// 
@@ -60,14 +50,24 @@
 			this.Display.Size = new System.Drawing.Size(215, 26);
 			this.Display.TabIndex = 1;
 			// 
+			// GermanButton
+			// 
+			this.GermanButton.Location = new System.Drawing.Point(32, 88);
+			this.GermanButton.Name = "GermanButton";
+			this.GermanButton.Size = new System.Drawing.Size(215, 67);
+			this.GermanButton.TabIndex = 2;
+			this.GermanButton.Text = "German";
+			this.GermanButton.UseVisualStyleBackColor = true;
+			this.GermanButton.Click += new System.EventHandler(this.GermanButton_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(278, 244);
+			this.Controls.Add(this.GermanButton);
 			this.Controls.Add(this.Display);
-			this.Controls.Add(this.button2);
-			this.Controls.Add(this.button1);
+			this.Controls.Add(this.EnglishButton);
 			this.Name = "Form1";
 			this.Text = "Form1";
 			this.ResumeLayout(false);
@@ -77,9 +77,9 @@
 
 		#endregion
 
-		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.Button button2;
+		private System.Windows.Forms.Button EnglishButton;
 		private System.Windows.Forms.TextBox Display;
+		private System.Windows.Forms.Button GermanButton;
 	}
 }
 

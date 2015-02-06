@@ -21,5 +21,10 @@ namespace HelloWorldForms
 		{
 			Display.Text = "Hello World!";
 		}
+
+		private void GermanButton_Click( object sender, EventArgs e )
+		{
+			Display.Text = "Hallo Welt!";
+		}
 	}
 }
