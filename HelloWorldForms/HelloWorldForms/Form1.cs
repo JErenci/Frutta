@@ -24,7 +24,7 @@ namespace HelloWorldForms
 
 		private void GermanButton_Click( object sender, EventArgs e )
 		{
-			Display.Text = "Hallo Welt, commit !";
+			Display.Text = "Guten Morgen Welt!";
 		}
 	}
 }
